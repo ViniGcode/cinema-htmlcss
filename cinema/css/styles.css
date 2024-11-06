@@ -1,0 +1,188 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilos gerais */
+  body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: #4A0000;
+    line-height: 1.6;
+  }
+  
+  /* Cabeçalho */
+  header {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    animation: slideDown 0.6s ease-out;
+  }
+  
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  header h1 {
+    margin-bottom: 0.5rem;
+  }
+  
+  header nav a {
+    color: #FFCCCC;
+    margin: 0 1rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  header nav a:hover {
+    color: #FF8888;
+  }
+  
+  /* Banner Principal */
+  #banner {
+    text-align: center;
+    padding: 3rem 1rem;
+    background-color: #7F0000;
+    color: #FFCCCC;
+    animation: fadeIn 1s ease-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Seção de Filmes */
+  #movies {
+    padding: 2rem;
+    text-align: center;
+    background-color: #660000;
+  }
+  
+  #movies h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .movie-card {
+    background-color: #8B0000;
+    padding: 1rem;
+    margin: 1rem auto;
+    max-width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .movie-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+  }
+  
+  .movie-card img {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  .movie-card img:hover {
+    transform: scale(1.1);
+  }
+  
+  .movie-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .movie-card a {
+    color: #FFCCCC;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .movie-card a:hover {
+    color: #FF8888;
+    text-decoration: underline;
+  }
+  
+  /* Seção de Detalhes do Filme */
+#movie-details {
+    padding: 2rem;
+    background-color: #7F0000;
+    max-width: 600px;
+    margin: 2rem auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    animation: slideUp 0.6s ease-out;
+  }
+  
+  #movie-details img {
+    max-width: 100%;  /* Limita a largura máxima da imagem */
+    height: auto;     /* Mantém a proporção da imagem */
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Seção de Localização e Contato */
+  #location, #contact {
+    padding: 2rem;
+    text-align: center;
+    background-color: #660000;
+    animation: fadeIn 1s ease;
+  }
+  
+  #location h2, #contact h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  #contact a {
+    color: #FFCCCC;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  #contact a:hover {
+    color: #FF8888;
+    text-decoration: underline;
+  }
+  
+  /* Rodapé */
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #4A0000;
+    color: #FFCCCC;
+  }
+  
+  footer nav a {
+    color: #FFCCCC;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  footer nav a:hover {
+    color: #FF8888;
+    text-decoration: underline;
+  }
+  
